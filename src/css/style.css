@@ -1,0 +1,98 @@
+body {
+    background-image: url(../images/bg-repeat.jpg);
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+}
+
+ .descricao {
+    width: 500px;   
+    display: flex;
+    flex-direction: column;
+    margin-right: 180px;
+    gap: 10px;
+}
+.descricao h1, p {
+    color: #ffffff;
+}
+.descricao h1 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.descricao p {
+    font-size: 20px;
+    font-weight: 300;
+    
+}
+
+.formulario {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 30px;
+    gap: 10px;
+}
+
+.formulario .campo-formulario, .botao-de-envio {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
+    border: 1px #000 solid;
+}
+
+.formulario .campo-formulario.invalido {
+    border-color: #F52E2E;
+}
+
+.formulario .campo-formulario.valido {
+    border-color: #00C22B;
+}
+.formulario textarea {
+    width: 300px;
+    height: 100px;
+}
+
+.formulario .campo-obrigatorio {
+    margin-top: -10px;
+    font-size: 8px;
+    font-weight: 400;
+    color: #F52E2E;
+    display: none;
+}
+
+.formulario .campo-obrigatorio.ativo {
+    display: block;
+}
+
+.formulario .aviso-formulario {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.campo-formulario::placeholder {
+    font-weight: 700;
+    width: 100%;
+    color: #A8A8A8;
+}
+
+.formulario .botao-de-envio {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #3ccc87;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
