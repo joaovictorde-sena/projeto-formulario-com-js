@@ -43,6 +43,8 @@ main{
     gap: 10px;
 }
 
+
+
 .formulario .campo-formulario, .botao-de-envio {
     font-size: 15px;
     font-weight: 700;
@@ -58,6 +60,7 @@ main{
     border-color: #00C22B;
 }
 .formulario textarea {
+    resize: none;
     width: 300px;
     height: 100px;
 }
